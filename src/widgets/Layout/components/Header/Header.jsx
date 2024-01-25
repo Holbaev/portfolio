@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   // states
-  const navigate = useNavigate();
   const [open , setOpen] = useState(false)
   return (
     <div className="header">
