@@ -1,0 +1,27 @@
+.info_title {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.info_desk {
+  color: #bababa;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+.info_btn{
+  width: fit-content;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  padding: 12px 20px;
+  background-color: #f06449;
+  background: linear-gradient(270deg,#f06449,#ef3636);
+  color: #fff;
+}

@@ -1,0 +1,27 @@
+.footer{
+    width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        background: #990011;
+        color: white;
+        gap: 20px;
+}
+.logo_title{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.footer_text{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.social_img{
+    cursor: pointer;
+}

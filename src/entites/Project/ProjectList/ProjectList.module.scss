@@ -1,0 +1,33 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.list_title{
+    font-size: 3rem;
+    font-weight: 400;
+    color:white;
+    margin-bottom: 10px;
+}
+.menu_list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 100%;
+}
+.menu_item{
+    width: 100%;
+    width: fit-content;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #bababa;
+    list-style-type: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    transition: 0.2s ease;
+}
+.menu_item:hover{
+    transform: scale(1.04);
+    font-weight: 600;
+}
