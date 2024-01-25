@@ -21,7 +21,7 @@ const Project = () => {
      
      useEffect(() => {
          getData();
-     } , [id]);
+     } , []);
 
   return (
     <div className={styles.wrapper}>
