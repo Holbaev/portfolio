@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./ProjectInfo.module.scss";
-import { getProject } from "../../../shared/service/ProjectsService";
 
 const ProjectInfo = ({ data }) => {
   return (

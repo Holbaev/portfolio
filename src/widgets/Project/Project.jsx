@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Project.module.scss";
 import { getProject } from "../../shared/service/ProjectsService";
 import ProjectInfo from "../../entites/Project/ProjectInfo/ProjectInfo";
@@ -19,10 +19,7 @@ const Project = () => {
         }
      }
      
-     useEffect(() => {
-         getData();
-     });
-
+   
   return (
     <div className={styles.wrapper}>
       <div className={styles.project}>

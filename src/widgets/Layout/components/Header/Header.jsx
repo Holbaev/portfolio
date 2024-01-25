@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import { useNavigate } from "react-router-dom";
-import { Link, NavLink } from "react-router-dom";
-import burger from "../../../../shared/assets/icons/burger-menu.png";
-import { use } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   // states
