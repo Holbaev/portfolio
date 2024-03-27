@@ -8,10 +8,10 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header_logo">
-        <h3 className="logo_title">Logo</h3>
+        <h3 className="logo_title">Frontend world</h3>
       </div>
       <div className="header_menu">
-        <div class="box">
+        <div className="box">
           <div id="hamburger" className={`${open ? "close" : "now-active"}`} onClick={() => setOpen(!open)}>
             <samp></samp>
             <samp></samp>

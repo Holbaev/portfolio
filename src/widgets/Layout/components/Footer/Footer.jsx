@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
         <div className={styles.footer_logo}>
-            <h3 className={styles.logo_title}>Logo</h3>
+            <h3 className={styles.logo_title}>Frontend world</h3>
         </div>
         <div className={styles.social}>
             <img src={github} className={styles.social_img} alt="" />

@@ -2,13 +2,13 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
 }
 .project{
     padding: 100px 100px;
     max-width: 80%;
     width: 100%;
     border-radius: 6px;
-    
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -19,12 +19,21 @@
    box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.37) ;
 }
 .project_desk{
-    width: 50%;
+    min-width: 50%;
     padding: 20px;
+    border: 1px solid #bababa;
+    border-radius: 4px;
+    padding: 10px;
 }
 .project_list{
-    width: 35%;
+    min-width: 35%;
     padding: 20px;
+}
+.loader{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -36,11 +45,20 @@
         align-items: flex-start;
     }
     .project_desk{
-        padding: 0px;
+        padding: 10px;
         width: 100%;
     }
     .project_list{
         width: 100%;
         padding: 0px;
+    }
+    .loader{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper{
+        padding-bottom: 200px;
     }
 }

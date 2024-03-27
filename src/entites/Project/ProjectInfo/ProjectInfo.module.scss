@@ -4,16 +4,26 @@
   font-weight: 100;
   margin-bottom: 10px;
 }
+.info_flex{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
+}
 .info_desk {
   color: #bababa;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
   line-height: 24px;
 }
-
+.ingo_icon{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .info_btn{
   width: fit-content;
   cursor: pointer;

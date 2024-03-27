@@ -1,26 +1,27 @@
   import React from "react";
-  import "./App.module.scss";
+  import "./App.css";
   import { routes } from "../shared/routes";
   import { Routes, Route } from "react-router-dom";
-  import styles from "./App.module.scss";
   import Layout from "../widgets/Layout/Layout";
   import MainPage from "../pages/MainPage/MainPage";
+  import { ToastContainer, Zoom } from "react-toastify";
+  import "react-toastify/dist/ReactToastify.css";
+
+
 
   function App() {
     return (
-      <div className={styles.wrapper}>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <div className={styles.banner}>
-          <div className={styles.content}>
-            <div className={styles.app}>
+      <div className="wrapper">
+        <q></q>
+        <q></q>
+        <q></q>
+        <q></q>
+        <q></q>
+        <q></q>
+        <q></q>
+        <q></q>
+        <q></q>
+        <div className="app">
               <Routes>
                 <Route path="/" element={<Layout/>}>
                 <Route index element={<MainPage/>}/>
@@ -34,8 +35,17 @@
                 </Route>
               </Routes>
             </div>
-          </div>
-        </div>
+            <ToastContainer
+        stacked
+        theme="dark"
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        transition={Zoom}
+      />
       </div>
     );
   }
