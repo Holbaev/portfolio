@@ -5,6 +5,7 @@ import github from '../../../../shared/assets/icons/github.png';
 import telegram from '../../../../shared/assets/icons/telegram.png';
 
 
+
 const Footer = () => {
   return (
     <div className={styles.footer}>
