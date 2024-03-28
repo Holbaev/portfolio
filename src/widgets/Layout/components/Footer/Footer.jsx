@@ -15,7 +15,7 @@ const Footer = () => {
             <a href="https://github.com/Holbaev/" target="_blank">
             <img src={github} className={styles.social_img} alt="" />
             </a>
-            <a href="https://web.telegram.org/k/" target="_blank">
+            <a href="https://t.me/holbinaiba" target="_blank">
             <img src={telegram} className={styles.social_img} alt="" />
             </a>
         </div>

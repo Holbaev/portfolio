@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 const Contact = () => {
   // states
@@ -11,6 +13,8 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [required, setRequired] = useState(false);
+  const [loading, setLoading] = useState(false);
+
 
   // functions
   const sendEmail = async () => {
@@ -33,6 +37,7 @@ const Contact = () => {
       toast.warning("Fill in all required fields.");
     } else {
       try {
+        setLoading(true);
         const res = await axios.post(
           "https://api.emailjs.com/api/v1.0/email/send",
           data
@@ -44,6 +49,8 @@ const Contact = () => {
         setRequired(false)
       } catch (err) {
         console.log(err);
+      }finally{
+        setLoading(false);
       }
     }
   };
@@ -111,7 +118,19 @@ const Contact = () => {
             ></textarea>
           </div>
         </div>
-        <button className={styles.contact_btn} onClick={sendEmail}>Send Message</button>
+              {!loading ? (
+              <button className={styles.contact_btn} onClick={sendEmail}>Send Message</button>
+            ) : (
+              <button className={styles.contact_btn}>
+                <ClipLoader
+                  color="#fff"
+                  loading={true}
+                  size={20}
+                  aria-label="Loading Spinner"
+                  data-testid="loader"
+                />
+              </button>
+            )}
       </div>
     </>
   );
