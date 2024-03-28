@@ -50,7 +50,6 @@ const Contact = () => {
   const setState = (value , setState) =>{
     setState(value);
   }
-console.log(required);
   return (
     <>
       <div className={styles.contact}>

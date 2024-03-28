@@ -31,7 +31,34 @@
   font-size: 1.2rem;
   letter-spacing: 3px;
   padding: 12px 20px;
-  background-color: #f06449;
-  background: linear-gradient(270deg,#f06449,#ef3636);
+  background: transparent;
   color: #fff;
+  border: 1px solid #bababa;
+  transition: background 0.4s ease-in-out;
+}
+.info_btn:hover,
+.info_btn:focus{
+  background: #c62e2e;
+}
+.ingo_icon{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 1px solid #bababa;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: #fff;
+  transition: background 0.4s ease-in-out;
+}
+.ingo_icon:hover,
+.ingo_icon:focus
+{
+  background: #c62e2e;
+}
+
+.ingo_img{
+  width: 16px;
+  height: 16px;
 }

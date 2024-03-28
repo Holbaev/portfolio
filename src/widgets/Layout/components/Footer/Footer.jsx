@@ -12,9 +12,12 @@ const Footer = () => {
             <h3 className={styles.logo_title}>Frontend world</h3>
         </div>
         <div className={styles.social}>
+            <a href="https://github.com/Holbaev/" target="_blank">
             <img src={github} className={styles.social_img} alt="" />
-            <img src={intagram} className={styles.social_img} alt="" />
+            </a>
+            <a href="https://web.telegram.org/k/" target="_blank">
             <img src={telegram} className={styles.social_img} alt="" />
+            </a>
         </div>
         <div>
             <p className={styles.footer_text}>© Holboev Aibek</p>

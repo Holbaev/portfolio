@@ -17,7 +17,6 @@ const Project = () => {
         try{
             const reponse = await getProject(id);
             setProject(reponse);
-            console.log(reponse);
         }catch(e){
             console.log(e);
         }
@@ -26,7 +25,6 @@ const Project = () => {
      useEffect(() => {
          getData();
      } , [id]);
-     console.log(project);
 
   return (
     <div className={styles.wrapper}>
