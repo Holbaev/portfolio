@@ -11,7 +11,7 @@ const ProjectInfo = ({ data }) => {
       <div className={styles.info_flex}>
       <a href={data?.reference} target="_blank" className={styles.info_btn}>View project</a>
       {data?.code !== "empty" && (
-      <a href={data?.reference} target="_blank"  className={styles.ingo_icon}>
+      <a href={data?.code} target="_blank"  className={styles.ingo_icon}>
         <img src={gitgub} alt="" className={styles.ingo_img}/>
         View code 
       </a>

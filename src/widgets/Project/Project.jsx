@@ -11,14 +11,19 @@ const Project = () => {
      // states 
      const [project , setProject] = useState(null);
     const [id , setId] = useState("UNET");
+    const [loader , setLoader] = useState(false)
      // functions
  
      const getData = async () =>{
         try{
+          setLoader(true)
             const reponse = await getProject(id);
             setProject(reponse);
         }catch(e){
             console.log(e);
+        }
+        finally{
+          setLoader(false)
         }
      }
      
@@ -37,7 +42,7 @@ const Project = () => {
             <div className={styles.loader}>
               <MoonLoader 
                 color="#990011"
-                loading={true}
+                loading={loader}
                 size={150}
                 aria-label="Loading Spinner"
                 data-testid="loader"
